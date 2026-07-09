@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Re-Elect Mayor John Gabbard | Dana Point</title>
+<meta name="description" content="Re-elect Mayor John Gabbard for Dana Point City Council. Proven leadership focused on public safety, responsible growth, affordability, and neighborhood quality of life." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Re-Elect Mayor John Gabbard | Dana Point" />
+<meta property="og:description" content="Proven leadership for Dana Point — public safety, responsible growth, affordability, and neighborhood quality of life." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/seal.png" />
+
+<link rel="icon" type="image/png" href="assets/seal.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --navy:#14284b;
+    --navy-deep:#0d1c38;
+    --red:#c8102e;
+    --red-dark:#a60d26;
+    --ocean:#2e6db4;
+    --sky:#e8eef6;
+    --sand:#f7f5f0;
+    --ink:#1c2431;
+    --muted:#5a6675;
+    --line:#e3e6ec;
+    --white:#ffffff;
+    --shadow:0 10px 30px rgba(20,40,75,.10);
+    --shadow-lg:0 24px 60px rgba(13,28,56,.18);
+    --radius:16px;
+    --maxw:1140px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{scroll-margin-top:88px}
+
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15;color:var(--navy)}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.78rem;
+    font-weight:700;
+    color:var(--red);
+    margin-bottom:14px;
+  }
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-weight:600;font-size:1rem;
+    padding:14px 26px;border-radius:999px;
+    transition:transform .15s ease, box-shadow .2s ease, background .2s ease;
+    cursor:pointer;border:2px solid transparent;white-space:nowrap;
+  }
+  .btn-red{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(200,16,46,.28)}
+  .btn-red:hover{background:var(--red-dark);transform:translateY(-2px)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--navy-deep);transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:var(--navy);border-color:var(--navy)}
+  .btn-outline:hover{background:var(--navy);color:#fff}
+  .btn-ghost-light{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.55)}
+  .btn-ghost-light:hover{background:#fff;color:var(--navy)}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:saturate(180%) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:44px;width:auto}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{
+    font-weight:600;font-size:.98rem;color:var(--navy);
+    position:relative;padding:6px 0;
+  }
+  .nav-links a:not(.btn):after{
+    content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);transition:width .2s ease;
+  }
+  .nav-links a:not(.btn):hover:after{width:100%}
+  .nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
+  .nav-toggle span{display:block;width:26px;height:2px;background:var(--navy);margin:5px 0;transition:.3s}
+
+  /* Hero */
+  .hero{
+    position:relative;color:#fff;overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(13,28,56,.72), rgba(20,40,75,.82)),
+      linear-gradient(120deg,#14284b 0%, #1c3a63 45%, #2e6db4 100%);
+  }
+  .hero:after{
+    /* subtle wave */
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'><path fill='%23ffffff' d='M0,40 C240,80 480,0 720,24 C960,48 1200,80 1440,40 L1440,80 L0,80 Z'/></svg>") no-repeat center bottom / cover;
+  }
+  .hero-inner{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;
+    padding:84px 0 110px;position:relative;z-index:2;
+  }
+  .hero h1{color:#fff;font-size:clamp(2.4rem,5vw,4rem);font-weight:800;margin-bottom:18px;letter-spacing:-.5px}
+  .hero h1 .accent{color:#ffd7dd;display:block;font-size:.5em;font-family:'Inter',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:#f3b6bf;margin-bottom:10px}
+  .hero p.lead{font-size:1.2rem;color:#e6edf7;max-width:44ch;margin-bottom:30px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px}
+
+  .hero-figure{display:flex;justify-content:center}
+  .photo-frame{
+    width:100%;max-width:380px;aspect-ratio:4/5;border-radius:20px;overflow:hidden;
+    background:linear-gradient(160deg,#dfe7f2,#c3d2e8);
+    box-shadow:var(--shadow-lg);border:6px solid rgba(255,255,255,.9);
+    display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);
+    position:relative;
+  }
+  .photo-frame .ph-inner{padding:24px}
+  .photo-frame .ph-inner svg{width:56px;height:56px;opacity:.55;margin:0 auto 10px}
+  .photo-frame small{display:block;font-size:.8rem;line-height:1.4}
+  .photo-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+
+  /* Stat strip */
+  .stats{background:var(--navy);color:#fff}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 24px}
+  .stat{text-align:center}
+  .stat b{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;color:#fff;line-height:1}
+  .stat span{display:block;font-size:.85rem;color:#c3cee0;margin-top:8px;letter-spacing:.03em}
+
+  /* Section base */
+  .section{padding:88px 0}
+  .section.alt{background:var(--sand)}
+  .section-head{max-width:720px;margin:0 auto 52px;text-align:center}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin-bottom:14px}
+  .section-head p{color:var(--muted);font-size:1.08rem}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .about-photo{
+    position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);
+    background:linear-gradient(160deg,#e7edf5,#cddaeb);
+    display:flex;align-items:center;justify-content:center;color:var(--muted);text-align:center;border:6px solid #fff;
+  }
+  .about-photo .ph-inner{padding:26px}
+  .about-photo svg{width:60px;height:60px;opacity:.5;margin:0 auto 10px}
+  .about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+  .about-body h3{font-size:1.7rem;margin:6px 0 16px}
+  .about-body p{color:#33404f;margin-bottom:16px}
+  .cred-list{list-style:none;margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+  .cred-list li{position:relative;padding-left:26px;font-size:.96rem;color:var(--ink)}
+  .cred-list li:before{content:"";position:absolute;left:0;top:8px;width:12px;height:12px;border-radius:3px;background:var(--red)}
+
+  /* Priorities */
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;
+    box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .2s ease;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+  .card .ic{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--sky);color:var(--navy);margin-bottom:18px}
+  .card .ic svg{width:26px;height:26px}
+  .card h3{font-size:1.22rem;margin-bottom:10px}
+  .card p{color:var(--muted);font-size:.96rem}
+
+  /* Donate band */
+  .donate{
+    color:#fff;text-align:center;position:relative;overflow:hidden;
+    background:linear-gradient(120deg,var(--red) 0%, #d61f3b 60%, #e14b60 100%);
+  }
+  .donate .wrap{padding:80px 24px}
+  .donate h2{color:#fff;font-size:clamp(2rem,3.6vw,2.9rem);margin-bottom:14px}
+  .donate p{color:#ffe3e8;font-size:1.12rem;max-width:52ch;margin:0 auto 30px}
+  .donate .btn-white{background:#fff;color:var(--red);font-size:1.08rem;padding:16px 34px}
+  .donate .btn-white:hover{background:#0d1c38;color:#fff;transform:translateY(-2px)}
+  .donate .note{margin-top:18px;font-size:.85rem;color:#ffd0d7}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:860px;margin:0 auto}
+  .contact-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px;
+    text-align:center;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .2s ease;
+  }
+  .contact-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .contact-card .ic{width:58px;height:58px;border-radius:50%;background:var(--sky);color:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+  .contact-card .ic svg{width:28px;height:28px}
+  .contact-card h3{font-size:1.2rem;margin-bottom:8px}
+  .contact-card a{color:var(--ocean);font-weight:600;font-size:1.05rem;word-break:break-word}
+  .contact-card a:hover{color:var(--red)}
+  .contact-card span.sub{display:block;color:var(--muted);font-size:.9rem;margin-top:6px}
+
+  /* Footer */
+  footer{background:var(--navy-deep);color:#c7d2e5;padding:56px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;align-items:start}
+  footer .brand-f img{height:52px;background:#fff;padding:8px 12px;border-radius:10px}
+  footer p.tag{margin-top:16px;max-width:38ch;font-size:.95rem;color:#aebbd4}
+  footer h4{color:#fff;font-family:'Inter',sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:16px}
+  footer ul{list-style:none}
+  footer ul li{margin-bottom:10px}
+  footer ul a{color:#c7d2e5;font-size:.96rem}
+  footer ul a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem;color:#8f9bb8}
+  .disclaimer{background:var(--navy-deep);color:#8f9bb8;text-align:center;font-size:.8rem;padding:0 24px 26px;max-width:900px;margin:0 auto}
+
+  /* Mobile */
+  @media (max-width:920px){
+    .hero-inner{grid-template-columns:1fr;gap:36px;padding:64px 0 96px}
+    .hero-figure{order:-1}
+    .photo-frame{max-width:300px}
+    .about-grid{grid-template-columns:1fr;gap:34px}
+    .about-photo{max-width:360px;margin:0 auto}
+    .cards{grid-template-columns:1fr 1fr}
+    .stats .wrap{grid-template-columns:1fr 1fr;gap:26px}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:640px){
+    .nav-links{
+      position:fixed;inset:72px 0 auto 0;flex-direction:column;gap:0;
+      background:#fff;border-bottom:1px solid var(--line);
+      padding:8px 24px 20px;transform:translateY(-140%);transition:transform .28s ease;
+      box-shadow:var(--shadow);
+    }
+    .nav-links.open{transform:translateY(0)}
+    .nav-links a{width:100%;padding:14px 0;border-bottom:1px solid var(--line)}
+    .nav-links a.btn{margin-top:14px;justify-content:center;border-bottom:none}
+    .nav-toggle{display:block}
+    .cards{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .cred-list{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .section{padding:64px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="brand" aria-label="John Gabbard for Dana Point — home">
+      <img src="assets/logo-wordmark.png" alt="John Gabbard for Dana Point" />
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About John</a>
+      <a href="#priorities">Priorities</a>
+      <a href="#contact">Contact</a>
+      <a href="#donate" class="btn btn-red">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO / HOME ============ -->
+<section id="home" class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="hero-badge">Dana Point City Council · 2026</span>
+      <h1><span class="accent">Re-Elect Mayor</span>John Gabbard</h1>
+      <p class="lead">Proven, steady leadership for Dana Point — keeping our neighborhoods safe, our growth responsible, and our coastal community affordable and vibrant for generations to come.</p>
+      <div class="hero-cta">
+        <a href="#donate" class="btn btn-red">Donate to the Campaign</a>
+        <a href="#about" class="btn btn-ghost-light">Meet John</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <!-- PHOTO: drop your portrait file at assets/john-hero.jpg (the vertical seated photo works great here).
+           Until the file exists, a styled placeholder shows automatically. -->
+      <div class="photo-frame">
+        <img src="assets/john-hero.jpg" alt="Mayor John Gabbard" onerror="this.style.display='none'" />
+        <div class="ph-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          <small><strong>Add John's photo</strong><br>Save the vertical portrait as<br>assets/john-hero.jpg</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAT STRIP ============ -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>17</b><span>Years of Marine Corps service</span></div>
+    <div class="stat"><b>15,000+</b><span>Homes built across So. California</span></div>
+    <div class="stat"><b>2005</b><span>Calling Dana Point home</span></div>
+    <div class="stat"><b>20+</b><span>Boards &amp; commissions served</span></div>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">About John</div>
+      <h2>A Lifetime of Service to Community</h2>
+      <p>From the Marine Corps to Dana Point City Hall, John Gabbard has spent his life leading with duty, integrity, and a deep commitment to the people he serves.</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- PHOTO: drop your photo file at assets/john-about.jpg (a harbor/smiling shot works well here).
+           Until the file exists, a styled placeholder shows automatically. -->
+      <div class="about-photo">
+        <img src="assets/john-about.jpg" alt="Mayor John Gabbard in Dana Point" onerror="this.style.display='none'" />
+        <div class="ph-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          <small><strong>Add a photo of John</strong><br>Save one as<br>assets/john-about.jpg</small>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <h3>Meet Mayor John Gabbard</h3>
+        <p>John Gabbard is the elected Mayor of Dana Point and a longtime community leader whose career spans distinguished military service, executive leadership in homebuilding, and hands-on civic engagement across our neighborhoods, faith communities, and veteran organizations.</p>
+        <p>A Marine Corps veteran of 17 years, John served as both an enlisted Marine and an officer, deploying on multiple operations worldwide. After his service he built a career in housing and real estate, helping develop more than 15,000 homes across Southern California — bringing practical expertise in land use and forward planning to his public service.</p>
+        <p>Elected to the City Council in 2022 representing District 1 and appointed Mayor for 2026, John is focused on public safety, responsible growth, affordability, and protecting the quality of life that makes Dana Point special. He and his wife Renee have called Dana Point home since 2005.</p>
+
+        <ul class="cred-list">
+          <li>Mayor, City of Dana Point (2026)</li>
+          <li>City Council, District 1 (2022)</li>
+          <li>U.S. Marine Corps, 1988–2005</li>
+          <li>MBA, USC Marshall School</li>
+          <li>Past Chair, Planning Commission</li>
+          <li>VFW &amp; American Legion member</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRIORITIES ============ -->
+<section id="priorities" class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Priorities</div>
+      <h2>Leadership That Delivers for Dana Point</h2>
+      <p>The values guiding John's work on the City Council — practical priorities focused on the things that matter most to our community.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
+        <h3>Public Safety</h3>
+        <p>Keeping our neighborhoods safe with strong support for first responders and emergency preparedness across the city.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Neighborhood Quality of Life</h3>
+        <p>Preserving the coastal character, open spaces, and welcoming feel that make Dana Point a wonderful place to call home.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>Responsible Growth</h3>
+        <p>Smart, managed development that respects our community's needs — informed by decades of real-world land use experience.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Affordability</h3>
+        <p>Fighting to keep Dana Point livable and affordable for working families, seniors, and the next generation of residents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DONATE ============ -->
+<section id="donate" class="donate">
+  <div class="wrap">
+    <div class="eyebrow" style="color:#ffe3e8">Support the Campaign</div>
+    <h2>Chip In to Re-Elect John</h2>
+    <p>Grassroots support powers this campaign. Your contribution helps us reach every voter in Dana Point and keep proven leadership working for our community.</p>
+    <!-- DONATE PLACEHOLDER: replace href="#" with your Anedot / WinRed / donation-page URL -->
+    <a href="#" class="btn btn-white" id="donateBtn" target="_blank" rel="noopener">Donate Now &rarr;</a>
+    <p class="note">Placeholder link — swap in your donation page URL (e.g. Anedot). Paid for by Gabbard for Dana Point.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Contact</div>
+      <h2>Get in Touch</h2>
+      <p>Questions, ideas, or want to get involved? We'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <h3>Email Us</h3>
+        <!-- CONTACT PLACEHOLDER: replace with the campaign email -->
+        <a href="mailto:info@johngabbard.com">info@johngabbard.com</a>
+        <span class="sub">We'll get back to you as soon as we can.</span>
+      </div>
+      <div class="contact-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+        <h3>Call Us</h3>
+        <!-- CONTACT PLACEHOLDER: replace with the campaign phone number -->
+        <a href="tel:+19495550100">(949) 555-0100</a>
+        <span class="sub">Available during campaign office hours.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="brand-f">
+        <img src="assets/seal.png" alt="Re-Elect John Gabbard — Dana Point City Council" />
+        <p class="tag">Proven leadership for a safe, vibrant, and welcoming Dana Point — now and for generations to come.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About John</a></li>
+          <li><a href="#priorities">Priorities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Take Action</h4>
+        <ul>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Volunteer</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="year"></span> Gabbard for Dana Point. All rights reserved.</span>
+      <span>Made for the people of Dana Point.</span>
+    </div>
+  </div>
+  <p class="disclaimer">Paid for by Gabbard for Dana Point. <!-- Add your FPPC committee ID number here. --></p>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => links.classList.remove('open'))
+  );
+  // Current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
